@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
-import '../App.css';
+import '../styles/App.css';
 
 class App extends Component {
   render() {
+    const backgroundshade = {
+      backgroundImage: 'linear-gradient(blue, #223A5E)',
+      color: 'white'
+    }
     return (
-      <div className="App">
+      <div className="App" style={backgroundshade}>
         <div className="App-header">
           <h2>This is the React Blog</h2>
-          <p className="App-intro">
+          <p className="AppIntro">
             React Blog
           </p>
         </div>
