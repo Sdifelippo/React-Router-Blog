@@ -14,12 +14,10 @@ button.Submit-button {
   transform: translateY(4px);
 }
 
-a{
-  text-align: center;
-}
-nav {
-      text-align: center
-}
+
+nav.nav.navbar {
+  display: flex;
+  justify-content: space-evenly;}
 
 navStyle {
   background-image: image(src/styles/DTower.jpg);

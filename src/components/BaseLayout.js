@@ -7,19 +7,29 @@ class BaseLayout extends Component{
   render(){
     let navStyle={
 backgroundImage: 'linear-gradient(blue, #223A5E)'    }
-    let nav={}
+let headStyle={
+  color:'white',
+  fontSize:'3rem',
+  display: 'flex',
+  justifyContent: 'space-evenly'
+}
+let navNavbar={
+  display: 'flex',
+  justifyContent: 'space-evenly'
+}
+
 return (
 
   <div>
+
         <section style={navStyle}>
+        <header style={headStyle}>React blog</header>
         <nav className="nav navbar">
           <nav>
             <Button variant="raised"><NavLink to='/' >Home</NavLink></Button>
-          </nav>
-          <nav>
+            
             <Button variant="raised"><NavLink to='/create' activeClassName='selected'>Create Post</NavLink></Button>
-          </nav>
-          <nav>
+
             <Button variant="raised"><NavLink to='/all' activeClassName='selected'>Show All</NavLink></Button>
           </nav>
         </nav>
