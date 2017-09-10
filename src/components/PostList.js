@@ -22,9 +22,7 @@ class PostList extends Component {
       }
 render(){
     let listStyle={
-backgroundImage: 'linear-gradient(white, #223A5E)',
-      textAlign: 'center',
-      color: 'white',
+backgroundImage: 'linear-gradient(white)',
       display: 'table',
     }
     console.log(this.state.List);

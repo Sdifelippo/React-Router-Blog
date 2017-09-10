@@ -81,7 +81,7 @@ class CreatePost extends Component{
         <label>Write your Blog here...</label>
         <textarea onChange={this.handleBlogChange} value={this.state.blog} className="form-control" rows="3"></textarea>
       </div>
-      <button onClick={this.addToList} type="submit" className="Submit-button">Submit</button>
+      <button variant="fab" onClick={this.addToList} type="submit" className="Submit-button">Submit</button>
     </form>
         </div>
       )

@@ -25,7 +25,9 @@ class ShowPost extends Component{
     console.log(this.state.AllBlogs);
     let formStyle={
         backgroundImage: 'linear-gradient(blue, #223A5E)',
-        color: 'white'
+        color: 'white',
+        textDecoration: 'none'
+
     }
     let {AllBlogs} = this.state
     return(

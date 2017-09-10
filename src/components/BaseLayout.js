@@ -5,17 +5,23 @@ import Button from 'muicss/lib/react/button';
 
 class BaseLayout extends Component{
   render(){
-    let navStyle={
-backgroundImage: 'linear-gradient(blue, #223A5E)'    }
+let navStyle={
+  backgroundImage: 'linear-gradient(blue, #223A5E)',
+  textDecoration: 'none'
+}
 let headStyle={
   color:'white',
   fontSize:'3rem',
   display: 'flex',
-  justifyContent: 'space-evenly'
+  justifyContent: 'space-evenly',
+  textDecoration: 'none'
+
 }
 let navNavbar={
   display: 'flex',
-  justifyContent: 'space-evenly'
+  justifyContent: 'space-evenly',
+  textDecoration: 'none'
+
 }
 
 return (

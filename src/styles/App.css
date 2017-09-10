@@ -6,18 +6,20 @@
 button.Submit-button{
   display: flex;
   justify-content: center;
-}
-
-button.Submit-button {
-  background-color: #f4511e;
   box-shadow: 0 5px #a6a6;
   transform: translateY(4px);
+  text-decoration: none;
 }
 
-
+section {
+  text-decoration: none;
+  text-align: -webkit-center;
+}
 nav.nav.navbar {
   display: flex;
-  justify-content: space-evenly;}
+  justify-content: space-evenly;
+  text-decoration: none;
+}
 
 navStyle {
   background-image: image(src/styles/DTower.jpg);
