@@ -27,10 +27,10 @@ return (
         <nav className="nav navbar">
           <nav>
             <Button variant="raised"><NavLink to='/' >Home</NavLink></Button>
-            
+
             <Button variant="raised"><NavLink to='/create' activeClassName='selected'>Create Post</NavLink></Button>
 
-            <Button variant="raised"><NavLink to='/all' activeClassName='selected'>Show All</NavLink></Button>
+            <Button variant="raised"><NavLink to='/all' activeClassName='selected'>Show All Posts</NavLink></Button>
           </nav>
         </nav>
         </section>

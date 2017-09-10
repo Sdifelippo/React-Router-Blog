@@ -23,7 +23,9 @@ class PostList extends Component {
 render(){
     let listStyle={
 backgroundImage: 'linear-gradient(white, #223A5E)',
-      'color': 'white',
+      textAlign: 'center',
+      color: 'white',
+      display: 'table',
     }
     console.log(this.state.List);
     let blogs = this.state.List
