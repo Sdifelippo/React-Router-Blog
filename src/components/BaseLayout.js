@@ -7,21 +7,22 @@ class BaseLayout extends Component{
   render(){
     let navStyle={
 backgroundImage: 'linear-gradient(blue, #223A5E)'    }
+    let nav={}
 return (
 
   <div>
         <section style={navStyle}>
-        <ul className="nav navbar">
-          <li>
-            <Button variant="raised"><NavLink to='/' activeStyle={{color:'white'}}>Home</NavLink></Button>
-          </li>
-          <li>
+        <nav className="nav navbar">
+          <nav>
+            <Button variant="raised"><NavLink to='/' >Home</NavLink></Button>
+          </nav>
+          <nav>
             <Button variant="raised"><NavLink to='/create' activeClassName='selected'>Create Post</NavLink></Button>
-          </li>
-          <li>
+          </nav>
+          <nav>
             <Button variant="raised"><NavLink to='/all' activeClassName='selected'>Show All</NavLink></Button>
-          </li>
-        </ul>
+          </nav>
+        </nav>
         </section>
         <section>
           {this.props.children}

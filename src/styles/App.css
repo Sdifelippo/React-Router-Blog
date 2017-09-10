@@ -13,3 +13,14 @@ button.Submit-button {
   box-shadow: 0 5px #a6a6;
   transform: translateY(4px);
 }
+
+a{
+  text-align: center;
+}
+nav {
+      text-align: center
+}
+
+navStyle {
+  background-image: image(src/styles/DTower.jpg);
+}

@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {NavLink} from 'react-router-dom';
+import Button from 'muicss/lib/react/button';
 
 class ShowPost extends Component{
   constructor(props) {
@@ -31,6 +33,7 @@ class ShowPost extends Component{
         <h1>{AllBlogs.title}</h1>
         <h3>Posted by:{AllBlogs.name}</h3>
           <p>{AllBlogs.blog}</p>
+          <Button variant="raised"><NavLink to="/all" >Return Back To Posts </NavLink></Button>
       </div>
     )
 

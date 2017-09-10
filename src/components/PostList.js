@@ -23,14 +23,13 @@ class PostList extends Component {
 render(){
     let listStyle={
 backgroundImage: 'linear-gradient(white, #223A5E)',
-      'height': '150px',
-      'padding':' 20px',
-      'color': 'white'
+      'color': 'white',
     }
     console.log(this.state.List);
     let blogs = this.state.List
     let list = blogs.map((post) => {
       return(
+
         <div key={post._id} style={listStyle}>
           <NavLink to={`/all/${post._id}`}>{post.title}</NavLink>
         </div>
