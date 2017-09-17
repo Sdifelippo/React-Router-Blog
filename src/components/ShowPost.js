@@ -24,7 +24,8 @@ class ShowPost extends Component{
   render(){
     console.log(this.state.AllBlogs);
     let formStyle={
-        backgroundImage: 'linear-gradient(blue, #223A5E)',
+      backgroundImage: 'url(https://wallpapercave.com/wp/EKTo81t.jpg)',
+      height: '1200px',
         color: 'white',
         textDecoration: 'none'
 

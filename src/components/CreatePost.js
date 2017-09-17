@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {NavLink} from 'react-router-dom';
 
 class CreatePost extends Component{
   constructor(props){
@@ -62,7 +63,7 @@ class CreatePost extends Component{
 
     render(){
       let formStyle={
-          backgroundImage: 'linear-gradient(blue, #223A5E)',
+        backgroundImage: 'url(https://wallpapercave.com/wp/EKTo81t.jpg)',
           color: 'white',
           height: '1200px'
       }
@@ -81,7 +82,7 @@ class CreatePost extends Component{
         <label>Write your Blog here...</label>
         <textarea onChange={this.handleBlogChange} value={this.state.blog} className="form-control" rows="3"></textarea>
       </div>
-      <button variant="fab" onClick={this.addToList} type="submit" className="Submit-button">Submit</button>
+      <button onClick={this.addToList} type="submit" className="Submit-button"><NavLink to='/' >Submit</NavLink></button>
     </form>
         </div>
       )

@@ -11,6 +11,10 @@ button.Submit-button{
   text-decoration: none;
 }
 
+.App-header{
+  font-size: 5rem;
+}
+
 section {
   text-decoration: none;
   text-align: -webkit-center;
@@ -19,8 +23,5 @@ nav.nav.navbar {
   display: flex;
   justify-content: space-evenly;
   text-decoration: none;
-}
-
-navStyle {
-  background-image: image(src/styles/DTower.jpg);
+background-color: blue;
 }

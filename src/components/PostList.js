@@ -22,16 +22,23 @@ class PostList extends Component {
       }
 render(){
     let listStyle={
-backgroundImage: 'linear-gradient(white)',
       display: 'table',
+      height: 'auto'
     }
+    let bgImage={
+      backgroundImage: 'url(https://wallpapercave.com/wp/EKTo81t.jpg)',
+      height: 'auto',
+      width: 'auto'
+    }
+
     console.log(this.state.List);
     let blogs = this.state.List
     let list = blogs.map((post) => {
       return(
-
+        <div style={bgImage}>
         <div key={post._id} style={listStyle}>
           <NavLink to={`/all/${post._id}`}>{post.title}</NavLink>
+        </div>
         </div>
       )
     })
