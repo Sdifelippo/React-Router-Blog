@@ -6,18 +6,20 @@ import Container from 'muicss/lib/react/container';
 class BaseLayout extends Component{
   render(){
 
-
+    let sideTitle={
+      color: 'white'
+    }
+//https://www.muicss.com/docs/v1/react/buttons
 return (
   <Container>
-  <div id="sidebar">
-  <div class="mui--text-light mui--text-display1 mui--align-vertical">THIS IS THE PUPPY BLOG</div>
-</div>
-<div id="content" class="mui-container-fluid">
+  <div style={sideTitle} id="sidebar">THIS IS THE PUPPY BLOG</div>
+
+<div id="content" className="mui-container-fluid">
 </div>
       <div>
         <nav className="nav navbar">
           <nav>
-            <Button color='primary'><NavLink to='/' >Home</NavLink></Button>
+            <Button className="mui-btn"><NavLink to='/' >Home</NavLink></Button>
 
             <Button ><NavLink to='/create' activeClassName='selected'>Create Post</NavLink></Button>
 

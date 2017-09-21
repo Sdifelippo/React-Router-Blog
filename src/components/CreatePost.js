@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import {NavLink} from 'react-router-dom';
-import Container from 'muicss/lib/react/container';
 import Form from 'muicss/lib/react/form';
 
 class CreatePost extends Component{
@@ -70,7 +68,7 @@ class CreatePost extends Component{
           height: '1200px'
       }
       return(
-          <Container>
+
       <div style={formStyle} >
         <Form >
 
@@ -93,7 +91,6 @@ class CreatePost extends Component{
 
     </Form>
         </div>
-</Container>
       )
     }
   }

@@ -26,9 +26,9 @@ class ShowPost extends Component{
     let formStyle={
       backgroundImage: 'url(https://wallpapercave.com/wp/EKTo81t.jpg)',
       height: '1200px',
-        color: 'white',
-        textDecoration: 'none'
-
+        backgroundColor: 'black',
+        textDecoration: 'none',
+marginTop: '-20px'
     }
     let {AllBlogs} = this.state
     return(
