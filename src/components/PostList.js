@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom'
+import Form from 'muicss/lib/react/form';
 
 class PostList extends Component {
   constructor(props) {
@@ -26,7 +27,7 @@ render(){
       height: 'auto'
     }
     let bgImage={
-      backgroundImage: 'url(https://wallpapercave.com/wp/EKTo81t.jpg)',
+
       height: 'auto',
       width: 'auto'
     }
@@ -43,8 +44,11 @@ render(){
       )
     })
     return(
-      <div >
-      {list}
+      <div class="mui-row">
+  <div class="mui-col-sm-10 mui-col-sm-offset-1">
+    <div class="mui--text-dark-secondary mui--text-body2">{list}</div>
+    <div class="mui-divider"></div>
+        </div>
       </div>
     )
   }

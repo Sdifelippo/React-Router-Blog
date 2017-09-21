@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
+import Container from 'muicss/lib/react/container';
+import Form from 'muicss/lib/react/form';
 
 class CreatePost extends Component{
   constructor(props){
@@ -68,13 +70,18 @@ class CreatePost extends Component{
           height: '1200px'
       }
       return(
+          <Container>
       <div style={formStyle} >
-        <form >
+        <Form >
+
+
+      <label>Authors Name:</label>
       <div className="form-group">
-        <label>Authors Name</label>
-        <input onChange={this.handleNameChange} value={this.state.name} type="text" className="form-control" placeholder="Name"></input>
+
+        <input type="text" className="form-control" onChange={this.handleNameChange} value={this.state.name} required={true}  placeholder="Name"></input>
       </div>
       <div className="form-group">
+
         <label>Title</label>
         <input onChange={this.handleTitleChange} value={this.state.title} type="text" className="form-control" placeholder="Title of Blog"></input>
       </div>
@@ -82,9 +89,11 @@ class CreatePost extends Component{
         <label>Write your Blog here...</label>
         <textarea onChange={this.handleBlogChange} value={this.state.blog} className="form-control" rows="3"></textarea>
       </div>
-      <button onClick={this.addToList} type="submit" className="Submit-button"><NavLink to='/' >Submit</NavLink></button>
-    </form>
+      <button onClick={this.addToList} type="submit" className="btn btn-primary">Submit</button>
+
+    </Form>
         </div>
+</Container>
       )
     }
   }

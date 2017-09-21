@@ -38,6 +38,7 @@ class ShowPost extends Component{
           <p>{AllBlogs.blog}</p>
           <Button variant="raised"><NavLink to="/all" >Return Back To Posts </NavLink></Button>
       </div>
+
     )
 
   }

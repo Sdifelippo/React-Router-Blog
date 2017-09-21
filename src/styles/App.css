@@ -1,8 +1,37 @@
 .form-group{
-  display: flex;
-  justify-content: center;
+  display: table-caption;
+}
+.form-control {
+  width: 100px;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
 
+form{
+  margin-left: -60rem
+}
+#sidebar {
+  background-color: #E57373;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  #sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 180px;
+    height: 100%;
+    padding-top: 30px;
+  }
+}
+input[type=text]:focus {
+    width: 200%;
+}
+
+textarea:focus {
+    width: 200%;
+}
 button.Submit-button{
   display: flex;
   justify-content: center;
@@ -14,7 +43,9 @@ button.Submit-button{
 .App-header{
   font-size: 5rem;
 }
-
+button.mui-btn {
+  text-decoration-color:
+}
 section {
   text-decoration: none;
   text-align: -webkit-center;
@@ -23,5 +54,6 @@ nav.nav.navbar {
   display: flex;
   justify-content: space-evenly;
   text-decoration: none;
-background-color: blue;
+  background-color: blue;
+  position: unset;
 }
