@@ -26,14 +26,10 @@ render(){
       height: '1200px',
       TextDecoration: 'none',
       marginTop: '10px',
+      color: 'black'
   }
 
-  // let formStyle={
-  //   text:'white',
-  //   marginTop:'3rem'
-  // }
-
-    let bgImage={
+  let bgImage={
       marginTop: '1rem',
       height: 'auto',
       width: 'auto'
@@ -51,7 +47,7 @@ render(){
       )
     })
     return(
-         <button className={formStyle}>{list}</button>
+         <div className={formStyle}>{list}</div>
 
     )
   }

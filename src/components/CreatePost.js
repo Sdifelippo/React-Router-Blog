@@ -21,6 +21,7 @@ class CreatePost extends Component{
           'title': e.target.value,
           'blog': e.target.value
         });
+        this.props.history.push('/');
         let listItem = JSON.stringify(this.state);
 
         fetch("https://tiny-lasagna-server.herokuapp.com/collections/blogger/", {
@@ -42,6 +43,7 @@ class CreatePost extends Component{
           title: '',
           blog: ''
         });
+
     }
 
     handleNameChange(e){
@@ -70,16 +72,12 @@ class CreatePost extends Component{
       return(
 
       <div style={formStyle} >
-        <Form >
-
-
+    <Form >
       <label>Authors Name:</label>
       <div className="form-group">
-
         <input type="text" className="form-control" onChange={this.handleNameChange} value={this.state.name} required={true}  placeholder="Name"></input>
       </div>
       <div className="form-group">
-
         <label>Title</label>
         <input onChange={this.handleTitleChange} value={this.state.title} type="text" className="form-control" placeholder="Title of Blog"></input>
       </div>
@@ -87,8 +85,7 @@ class CreatePost extends Component{
         <label>Write your Blog here...</label>
         <textarea onChange={this.handleBlogChange} value={this.state.blog} className="form-control" rows="3"></textarea>
       </div>
-      <button onClick={this.addToList} type="submit" className="btn btn-primary">Submit</button>
-
+      <button onClick={this.addToList.bind(this)}  type="submit" className="btn btn-primary">Submit</button>
     </Form>
         </div>
       )
