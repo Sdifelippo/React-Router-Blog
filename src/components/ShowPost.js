@@ -11,13 +11,12 @@ class ShowPost extends Component{
   }
 
   componentDidMount() {
-        const { id } = this.props.match.params;
-        const link=`https://tiny-lasagna-server.herokuapp.com/collections/blogger/${id}`;
-        fetch(link).then(results => results.json())
-      .then(data => {
-        console.log('here is the data:',data);
-        this.setState({
-          AllBlogs:data
+      const { id } = this.props.match.params;
+      const link=`https://tiny-lasagna-server.herokuapp.com/collections/blogger/${id}`;
+      fetch(link).then(results => results.json()).then(data => {
+      console.log('here is the data:',data);
+      this.setState({
+        AllBlogs:data
         })
       })
   }
@@ -26,9 +25,9 @@ class ShowPost extends Component{
     let formStyle={
       backgroundImage: 'url(https://wallpapercave.com/wp/EKTo81t.jpg)',
       height: '1200px',
-        backgroundColor: 'black',
-        textDecoration: 'none',
-marginTop: '-20px'
+      backgroundColor: 'black',
+      textDecoration: 'none',
+      marginTop: '-20px'
     }
     let {AllBlogs} = this.state
     return(
@@ -38,9 +37,7 @@ marginTop: '-20px'
           <p>{AllBlogs.blog}</p>
           <Button variant="raised"><NavLink to="/all" >Return Back To Posts </NavLink></Button>
       </div>
-
     )
-
   }
 }
 

@@ -25,39 +25,33 @@ render(){
       backgroundImage: 'url(https://wallpapercave.com/wp/EKTo81t.jpg)',
       height: '1200px',
       TextDecoration: 'none',
-      marginTop: '-10px',
+      marginTop: '10px',
   }
 
-  let postTitle={
-    color:'white'
+  // let formStyle={
+  //   text:'white',
+  //   marginTop:'3rem'
+  // }
 
-  }
-    let listStyle={
-      display: 'table',
-      height: 'auto',
-      color: 'blue'
-    }
     let bgImage={
+      marginTop: '1rem',
       height: 'auto',
       width: 'auto'
     }
+
 
     console.log(this.state.List);
     let blogs = this.state.List
     let list = blogs.map((post) => {
       return(
-        <div style={bgImage}>
-        <div key={post._id} style={listStyle}>
+
+        <div style={bgImage} key={post._id} >
           <NavLink to={`/all/${post._id}`}>{post.title}</NavLink>
-        </div>
         </div>
       )
     })
     return(
-      <div style={formStyle}>
-      <div className={postTitle}>{list}</div>
-    <div className="mui-divider"></div>
-        </div>
+         <button className={formStyle}>{list}</button>
 
     )
   }

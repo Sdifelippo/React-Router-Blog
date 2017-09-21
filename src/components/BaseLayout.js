@@ -31,7 +31,7 @@ return (
         </section>
       </div>
       </Container>
-)
-}
+    )
+  }
 }
 export default BaseLayout;
